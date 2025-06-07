@@ -1,0 +1,152 @@
+{
+  "navigate_home": [
+    "go to home",
+    "navigate to homepage",
+    "take me home",
+    "open dashboard",
+    "show me the home screen",
+    "go back home",
+    "get me to the main page"
+  ],
+  "navigate_login": [
+    "go to login",
+    "log me in",
+    "take me to login",
+    "open sign in page",
+    "I want to login",
+    "show login screen",
+    "sign in please",
+    "navigate to login",
+    "login me"
+  ],
+  "navigate_messages": [
+    "go to messages",
+    "take me to messages",
+    "I want to open messages",
+    "show messages screen",
+    "navigate to messages",
+    "messages",
+    "go to mychats",
+    "take me to mychats",
+    "I want to open mychats",
+    "show mychats screen",
+    "navigate to mychats",
+    "mychats"
+  ],
+  "navigate_register": [
+    "go to register",
+    "take me to register",
+    "sign up page",
+    "open registration",
+    "I want to create account",
+    "show me sign up"
+  ],
+  "navigate_profile": [
+    "show my profile",
+    "take me to profile",
+    "go to account page",
+    "open my profile screen"
+  ],
+
+  "logout": [
+    "log me out",
+    "logout please",
+    "sign out",
+    "exit account",
+    "end my session",
+    "log off"
+  ],
+  "search": [
+    "search for shoes",
+    "look up jackets",
+    "find me some mobiles",
+    "I want to search headphones",
+    "show results for laptops",
+    "search clothes for men",
+    "find iphone 14",
+    "search red dress"
+  ],
+  "fill_form_email": [
+    "my email is john@example.com",
+    "type email john at example dot com",
+    "set email to jane@site.com",
+    "enter email address as test@abc.com"
+  ],
+  "fill_form_name": [
+    "my name is John",
+    "type my name as Jane",
+    "set the name to Rakesh",
+    "input name Rahul"
+  ],
+  "fill_form_username": [
+  "my username is john123",
+  "type username as jane_doe",
+  "set the username to rakesh",
+  "input username rahul_01",
+  "username is dev_user"
+],
+  "fill_form_password": [
+    "my password is 123456",
+    "set password to secret123",
+    "type password admin2023",
+    "input my password qwerty"
+  ],
+  "message": [
+    "say hello to Rahul",
+    "send hi to Vijay",
+    "tell Sneha good morning",
+    "send message 'see you' to Alex",
+    "say how are you to Priya",
+    "message Mehul 'let's meet at 5'"
+  ],
+  "search_general": [
+    "search for cricket scores",
+    "look for trending news",
+    "search latest updates",
+    "find weather today",
+    "show covid updates",
+    "get movie timings"
+  ],
+  "go_back": [
+    "go back",
+    "return to previous page",
+    "go back to last screen",
+    "back to previous",
+    "take me back"
+  ],
+  "submit_login": [
+  "login me",
+  "click login",
+  "submit login form",
+  "press login button",
+  "log me in",
+  "sign in",
+  "go ahead and login"
+],
+  "navigate_cart": [
+    "go to cart",
+    "open shopping cart",
+    "show my cart",
+    "navigate to checkout",
+    "take me to my basket"
+  ],
+  "open_gig_number": [
+  "open gig number 1",
+  "open second gig",
+  "show me gig 3",
+  "open gig 4",
+  "go to gig number 2"
+],
+"contact_seller": [
+  "contact the seller",
+  "message seller",
+  "talk to this person",
+  "send a message"
+],
+ "send_to_seller": [
+    "say hi to seller",
+    "send hello to seller",
+    "send message to seller"
+  ]
+
+}

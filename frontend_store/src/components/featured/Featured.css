@@ -1,0 +1,132 @@
+.featured {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  /* background-color: #135e91; */
+  /* background-image: url("C:\Users\prasa\Desktop\Mern pro\frontend_store\src\assets\featurebg.png"); */
+  color: white;
+  margin-bottom: 20px;
+}
+/* #013914 */
+.featured .container {
+  width: 1400px;
+  display: flex;
+  align-items: center;
+}
+
+.featured .container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.featured .container .left h1 {
+  font-size: 50px;
+  font-weight: 280;
+  font-family: Macan, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.featured .container .left h1 span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* .featured .container .left .search {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 8px;
+  width: 150%;
+} */
+.featured .container .left .search {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: 150%;
+  gap: 10px;
+}
+
+
+
+/* .featured .container .left .search .searchInput {
+  margin-left: 10px;
+} */
+ .featured .container .left .search .searchInput {
+  flex: 1;
+}
+
+
+
+/* .featured .container .left .search .searchInput img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+} */
+
+/* .featured .container .left .search .searchInput input {
+  border: none;
+  outline: none;
+} */
+.featured .container .left .search .searchInput input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+
+.featured .container .left .search .searchInput input::placeholder {
+  color: gray;
+  /* width: 100%; */
+}
+
+.featured .container .left .search button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  background-color: #2e6ce2;
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.featured .container .left .popular {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.featured .container .left .popular span {
+  width: max-content;
+}
+
+.featured .container .left .popular button {
+  width: max-content;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 14px;
+}
+.featured .container .left .popular button:hover {
+    background-color: rgb(23, 22, 22);
+    
+}
+
+.featured .container .right {
+  height: 100%;
+}
+
+.featured .container .right img {
+  height: 100%;
+  object-fit: contain;
+}
