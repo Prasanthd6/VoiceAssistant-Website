@@ -3,7 +3,9 @@ import "./Gigs.css";
 import GigCard from "../../components/gigCard/GigCard";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { CiSearch } from "react-icons/ci";
+
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
@@ -13,6 +15,7 @@ function Gigs() {
     experience: "",
     rating: "",
   });
+  
 
   const { search } = useLocation();
   const query = new URLSearchParams(search);
@@ -30,7 +33,7 @@ function Gigs() {
 
   useEffect(() => {
     refetch();
-  }, [sort, filters]);
+  }, [sort, filters,keyword]);
 
   const handleFilterChange = (e) => {
     setFilters((prev) => ({
@@ -44,10 +47,48 @@ function Gigs() {
     setOpen(false);
   };
 
+const navigate =useNavigate();
+  const [input, setInput] = useState(keyword || "");
+  const handleSubmit = () => {
+    navigate(`/gigs?search=${input}`);
+  };
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit();
+    }
+  };
+
   return (
     <div className="gigs">
       <div className="container">
         <span className="breadcrumbs">Domate &gt; Services &gt;</span>
+        <div className="search">
+            <div className="searchInput">
+              <input
+              id="search"
+                type="text"
+                value={input}
+                placeholder="Search by service, skills"
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+              />
+            </div>
+            <button
+              onClick={handleSubmit}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "5px",
+                padding: "10px 20px",
+                fontSize: "16px",
+                height: "40px",
+                cursor: "pointer",
+                borderRadius: "15px",
+              }}
+            >
+              <CiSearch size={30} /> Search
+            </button>
+          </div>
         <h1>Results for '{keyword || "All Services"}'</h1>
         <p>Find skilled professionals and reliable help near you.</p>
 
