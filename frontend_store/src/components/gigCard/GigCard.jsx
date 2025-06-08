@@ -34,7 +34,7 @@ const GigCard = ({ item }) => {
             </div>
           )}
 
-          <p className="desc">{item.desc}</p>
+          <p className="desc">{item.description}</p>
 
           <div className="star">
             {/* <img src="/img/star.png" alt="Star" /> */}
