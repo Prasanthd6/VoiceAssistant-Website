@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./sellerProfile.css"; // optional: style like Fiverr
+import "./SellerProfile.css"; // optional: style like Fiverr
 import { useSelector } from "react-redux"; // or however you get currentUser
 import { useNavigate,useLocation } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
