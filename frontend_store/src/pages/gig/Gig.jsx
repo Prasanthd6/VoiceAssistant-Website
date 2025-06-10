@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import "./Gig.css";
-import { Slider } from "infinite-react-carousel/lib";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link, useParams,useNavigate } from "react-router-dom";
 import { useQuery,useMutation } from "@tanstack/react-query";
 import newRequest, { getSocket } from "../../utils/newRequest";
@@ -121,11 +122,25 @@ const handleContact = async () => {
                 )}
               </div>
             )}
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-              {data.images.map((img) => (
-                <img key={img} src={img} alt="" />
-              ))}
-            </Slider>
+                                
+                  <Carousel
+                    showArrows={true}
+                    showThumbs={false}
+                    showStatus={false}
+                    infiniteLoop
+                    className="custom-carousel"
+                    autoPlay={true}
+                    interval={3000}
+                    swipeable
+                    emulateTouch
+                  >
+                    {data.images.map((img) => (
+                      <div key={img}>
+                        <img src={img} alt="carousel content" />
+                      </div>
+                    ))}
+                  </Carousel>
+
             <h2>About This Gig</h2>
             <p>{data.description}</p>
             {isLoadingUser ? (
