@@ -44,12 +44,27 @@ const handleCommand = async (command) => {
       break;
     // case "fill":
     //   document.getElementById(field)?.value = value;
+    // case "fill":
+    //     const input = document.getElementById(field);
+    //     if (input) {
+    //       input.value = value;
+    //     }
+    //     break;
     case "fill":
-        const input = document.getElementById(field);
-        if (input) {
-          input.value = value;
-        }
-        break;
+  // Trigger a custom event to update React state
+  window.dispatchEvent(
+    new CustomEvent("voice-fill", {
+      detail: { field, value },
+    })
+  );
+
+  // Optional: update input value visually
+  const input = document.getElementById(field);
+  if (input) {
+    input.value = value;
+  }
+  break;
+
 
     case "message":
     window.dispatchEvent(
@@ -99,7 +114,7 @@ const handleCommand = async (command) => {
       window.history.back();
       break;
     default:
-      alert("Command not recognized");
+      alert("Can you please say again clearly");
   }
 }catch(err){
       console.error("❌ Command handling error:", err);
@@ -167,7 +182,7 @@ const toggleListening = () => {
     zIndex: 9999,
     boxShadow: "0 0 8px rgba(0,0,0,0.3)"
   }}>
-      {isListening ? "Stop Listening" : "Start Voice Control 🎙️"}
+      {isListening ? "Stop Listening" : "🎙️ Ask Voice Assistant"}
     </button>
   );
 };

@@ -239,7 +239,7 @@ const handleContact = async () => {
               ))}
             </div>
             <Link to={`/pay/${id}`}>
-            <button>Continue</button>
+            <button id="order">Continue</button>
             </Link>
           </div>
         </div>

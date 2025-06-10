@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./CheckoutForm.css";
 import {
   PaymentElement,
   LinkAuthenticationElement,
@@ -89,8 +90,8 @@ const CheckoutForm = () => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <PaymentElement id="payment-element" options={paymentElementOptions} />
-      <button disabled={isLoading || !stripe || !elements} id="submit">
-        <span id="button-text">
+      <button disabled={isLoading || !stripe || !elements} id="submit" className="paybtn">
+        <span id="button-text" >
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>
       </button>

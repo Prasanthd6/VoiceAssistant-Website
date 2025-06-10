@@ -151,7 +151,7 @@ const handleOtherChange = (e) => {
                   <option value="tutoring">Home Tutoring</option>
                   <option value="driver">Driver on Call</option>
                   <option value="moverpacker">Movers & Packers</option>
-                  <option value="eventhelp">Event Help</option>
+                  <option value="event help">Event Help</option>
                   <option value="computerrepair">Computer/IT Repair</option>
                   <option value="cctv">CCTV Installation</option>
                   <option value="other">Other (Specify Below)</option>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Login.css";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
@@ -34,6 +34,21 @@ function Login() {
     }
   };
 
+  useEffect(() => {
+  const handleVoiceFill = (e) => {
+    const { field, value } = e.detail;
+
+    if (field === "username") setUsername(value);
+    if (field === "password") setPassword(value);
+  };
+
+  window.addEventListener("voice-fill", handleVoiceFill);
+
+  return () => {
+    window.removeEventListener("voice-fill", handleVoiceFill);
+  };
+}, []);
+
   return (
     <div className="login">
       <form onSubmit={handleSubmit}>
@@ -51,9 +66,10 @@ function Login() {
         id="password"
           name="password"
           type="password"
+          
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button id="login" type="submit">Login</button>
+        <button id="loginpage" type="submit">Login</button>
         {error && error}
       </form>
     </div>

@@ -66,7 +66,8 @@
 }
 
 .home .features .container .item img {
-  width: 100%;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .home .features .container .item h1 {
@@ -145,10 +146,15 @@
   cursor: pointer;
 }
 
-.home .explore .container .items .item img {
+/* .home .explore .container .items .item img {
   width: 50px;
-  height: 50px;
-}
+  height: 30px;
+} */
+ .itemimage{
+  margin: 0px;
+  height: 10px;
+  width: 10px;
+ }
 
 .home .explore .container .items .item .line {
   width: 50px;

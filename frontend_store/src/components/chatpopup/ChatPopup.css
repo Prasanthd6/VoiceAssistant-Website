@@ -36,23 +36,24 @@
   flex: 1;
   padding: 15px;
   overflow-y: auto;
+  
 }
 
-.message {
+.message{
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 5px;
   max-width: 80%;
-  color: white;
 }
 
-.message.sent {
-  background: #2e6ce2;
-  color: white;
+.sent{
+  background: #bcd4f6;
+  color: #f0f0f0;
   margin-left: auto;
+  
 }
 
-.message.received {
+.received {
   background: #f0f0f0;
   margin-right: auto;
   color: black;

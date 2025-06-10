@@ -328,10 +328,24 @@ const UpdateGig = () => {
 
             <label>Category</label>
             <select name="cat" value={state.cat} onChange={handleChange}>
-              <option value="design">Design</option>
-              <option value="web">Web Development</option>
-              <option value="animation">Animation</option>
-              <option value="music">Music</option>
+                  <option value="electrician">Electrician</option>
+                  <option value="plumber">Plumber</option>
+                  <option value="carpenter">Carpenter</option>
+                  <option value="cleaning">Home Cleaning</option>
+                  <option value="acrepair">AC Repair & Services</option>
+                  <option value="appliancerepair">Appliance Repair</option>
+                  <option value="pestcontrol">Pest Control</option>
+                  <option value="painter">Painter</option>
+                  <option value="gardening">Gardening</option>
+                  <option value="laundry">Laundry</option>
+                  <option value="cooking">Cooking Help</option>
+                  <option value="babysitting">Babysitting</option>
+                  <option value="tutoring">Home Tutoring</option>
+                  <option value="driver">Driver on Call</option>
+                  <option value="moverpacker">Movers & Packers</option>
+                  <option value="eventhelp">Event Help</option>
+                  <option value="computerrepair">Computer/IT Repair</option>
+                  <option value="cctv">CCTV Installation</option>
             </select>
 
             <div className="images">

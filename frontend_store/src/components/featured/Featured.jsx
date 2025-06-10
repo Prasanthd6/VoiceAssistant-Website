@@ -65,8 +65,8 @@ function Featured() {
           <div className="popular">
             <button onClick={() => navigate("/gigs?search=Carpenter")}>Carpenter</button>
             <button onClick={() => navigate("/gigs?search=Gardening")}>Gardening</button>
-            <button onClick={() => navigate("/gigs?search=Painter")}>Wall Painting</button>
-            <button onClick={() => navigate("/gigs?search=Home Services")}>Home Services</button>
+            <button onClick={() => navigate("/gigs?search=Computer/IT Repairr")}>Computer/IT Repair</button>
+            <button onClick={() => navigate("/gigs?search=")}>All Services</button>
           </div>
         </div>
       </div>

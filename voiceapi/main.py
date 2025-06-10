@@ -55,7 +55,8 @@ def map_to_action(intent, text):
             "navigate_profile": "/profile",
             "navigate_messages": "/messages",
             "navigate_chat": "/chatpopup",
-            "navigate_cart": "/cart"
+            "navigate_creategig": "/add",
+            "navigate_mygig":"/mygig",
         }
         return {"action": "navigate", "path": path_map.get(intent, "/")}
 
@@ -84,7 +85,10 @@ def map_to_action(intent, text):
         return {"action": "fill", "field": "password", "value": password[0][1] if password else ""}
     
     elif intent == "submit_login":
-        return {"action": "click", "element": "login"}
+        return {"action": "click", "element": "loginpage"}
+    
+    elif intent == "book_order":
+        return {"action": "click", "element": "order"}
 
     # elif intent == "open_gig_number":
     #     # Extract the first number found in the command text

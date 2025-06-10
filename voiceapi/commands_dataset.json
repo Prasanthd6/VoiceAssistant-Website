@@ -6,20 +6,23 @@
     "open dashboard",
     "show me the home screen",
     "go back home",
+    "go back",
+    "back to home",
+    "back to home page",
     "get me to the main page"
   ],
   "navigate_login": [
     "go to login",
-    "log me in",
+    "go to login page",
     "take me to login",
     "open sign in page",
     "I want to login",
     "show login screen",
     "sign in please",
-    "navigate to login",
-    "login me"
+    "navigate to login"
   ],
   "navigate_messages": [
+    "open my chats",
     "go to messages",
     "take me to messages",
     "I want to open messages",
@@ -47,8 +50,37 @@
     "go to account page",
     "open my profile screen"
   ],
-
+  "navigate_creategig": [
+    "create my gig",
+    "add my gig",
+    "make my gig",
+    "create gig",
+    "create the gig"
+  ],
+  "navigate_mygig": [
+    "go to my gig",
+    "take me to my gig",
+    "I want to open my gig",
+    "show my gig",
+    "navigate to my gig",
+    "open my gig",
+    "view my gig"
+  ],
+   "book_order": [
+    "order this",
+    "proceed to order",
+    "proceed to payment",
+    "book this one",
+    "book this service",
+    "continue payment",
+    "continue booking"
+  ],
   "logout": [
+    "logout my account",
+    "logout the account",
+    "logout account",
+    "logout my details",
+    "logout me",
     "log me out",
     "logout please",
     "sign out",
@@ -86,12 +118,18 @@
   "username is dev_user"
 ],
   "fill_form_password": [
+    "password 123456",
+    "password is 123456",
     "my password is 123456",
+    "and password is 123456",
     "set password to secret123",
     "type password admin2023",
     "input my password qwerty"
   ],
   "message": [
+    "say definitely to tony",
+    "reply okay to tony",
+    "reply hello to rahul",
     "say hello to Rahul",
     "send hi to Vijay",
     "tell Sneha good morning",
