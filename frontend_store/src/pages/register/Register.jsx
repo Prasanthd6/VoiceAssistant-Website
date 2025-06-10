@@ -3,7 +3,6 @@ import upload from "../../utils/upload";
 import "./Register.css";
 import newRequest from "../../utils/newRequest";
 import { useNavigate, useLocation } from "react-router-dom";
-import VoiceControl from "../../voicenav/VoiceNav";
 import { useDispatch } from "react-redux";
 import { loginSuccess } from "../../redux/userSlice";
 

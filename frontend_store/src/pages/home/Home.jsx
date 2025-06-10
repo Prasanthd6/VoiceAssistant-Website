@@ -15,7 +15,6 @@ import { SiTicktick } from "react-icons/si";
 import { BiSolidCctv } from "react-icons/bi";
 import workers2 from "../../assets/workers2.png"
 import VoiceControl from "../../components/voicecontrol/VoiceControl";
-import VoiceAssist from "../../voicenav/VoiceNav";
 import PopularGigsSlider from "./PopularGigsSlider";
 
 
