@@ -101,17 +101,6 @@
   width: 720px;
 }
 
-/* .reverse class commented out in original code */
-/*
-.home .features.reverse {
-  background-color: #0d084d;
-  color: white;
-}
-
-.home .features.reverse .container {
-  flex-direction: row-reverse;
-}
-*/
 
 .home .explore {
   display: flex;
@@ -146,10 +135,6 @@
   cursor: pointer;
 }
 
-/* .home .explore .container .items .item img {
-  width: 50px;
-  height: 30px;
-} */
  .itemimage{
   margin: 0px;
   height: 10px;

@@ -8,8 +8,6 @@ const upload = async (file) => {
   try {
     const res = await axios.post("https://api.cloudinary.com/v1_1/dqjyxvd7d/image/upload", data);
 
-    // const { url } = res.data;
-    // return url;
     const { secure_url } = res.data;
     return secure_url;
   } catch (err) {

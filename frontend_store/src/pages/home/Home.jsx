@@ -47,11 +47,8 @@ const { isLoading, error, data } = useQuery({
 
   return (
     <div className="home">
-      {/* <VoiceAssist/> */}
       <Featured />
-          {/* <h1 style={{marginLeft:"50px",fontSize:"25px",fontFamily:"serif"}}>What are you looking for?</h1> */}
-      {/* <TrustedBy /> */}
-        {/* <VoiceControl/> */}
+         
        <div className="grid-container">
                   {cards.map((card,index) =>(
                     <Card key={index} icon={card.icon} title={card.title}/>
@@ -68,7 +65,7 @@ const { isLoading, error, data } = useQuery({
           <div className="item">
             <h1>Essential services from trusted professionals, anytime</h1>
             <div className="title">
-              {/* <img src="./img/check.png" alt="" /> */}
+              
               <SiTicktick />
               Verified professionals near you
             </div>
@@ -76,7 +73,7 @@ const { isLoading, error, data } = useQuery({
                     Access a wide network of background-verified workers available in your local area for immediate tasks.
             </p>
             <div className="title">
-              {/* <img src="./img/check.png" alt="" /> */}
+              
               <SiTicktick />
                   Transparent pricing, no surprises   
          </div>
@@ -84,7 +81,7 @@ const { isLoading, error, data } = useQuery({
               Clear, upfront pricing for every service. Pay only after the job is done and approved by you..
             </p>
             <div className="title">
-              {/* <img src="./img/check.png" alt="" /> */}
+              
               <SiTicktick />
                  Fast and reliable response
             </div>
@@ -92,7 +89,7 @@ const { isLoading, error, data } = useQuery({
                  Get real-time help from available professionals within minutes—whenever you need it most.
             </p>
             <div className="title">
-              {/* <img src="./img/check.png" alt="" /> */}
+              
               <SiTicktick />
       Secure payments and service guarantee
             </div>
@@ -121,19 +118,16 @@ const { isLoading, error, data } = useQuery({
   </p>
 
   <div className="title">
-    {/* <img src="./img/check.png" alt="" /> */}
     <SiTicktick />
     Hire verified professionals with a track record of reliability
   </div>
 
   <div className="title">
-    {/* <img src="./img/check.png" alt="" /> */}
     <SiTicktick />
     Get matched with skilled workers for any task by our smart suggestion engine
   </div>
 
   <div className="title">
-    {/* <img src="./img/check.png" alt="" /> */}
     <SiTicktick />
     Manage multiple service requests and track tasks in one dashboard
   </div>

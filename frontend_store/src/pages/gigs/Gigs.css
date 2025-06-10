@@ -19,8 +19,6 @@
   color: #555;
 }
 
-/* .gigs .container h1 {
-  /* empty, no styles */
 
 .gigs .container p {
   color: #999;
@@ -136,7 +134,6 @@
 
  .searchInput input::placeholder {
   color: gray;
-  /* width: 100%; */
 }
 
 .search button {

@@ -27,12 +27,7 @@
   cursor: pointer;
   transition: background 0.2s ease;
 }
-/* .myChatsPage .chatList .chatListItem img {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  object-fit: cover;
-} */
+
  .chatListAvatar {
   width: 40px;
   height: 40px;
@@ -90,23 +85,10 @@
   flex-direction: column;
   gap: 10px;
 }
- /* .myChatsPage .chatWindow .chatMessages {
-  flex: 1;
-  padding: 15px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-height: 50vh; /* Optional: restrict max height */
- 
 
 
 .myChatsPage .chatWindow .chatMessages .message {
-  /* margin: 20px 0;
-  padding: 8px 12px;
-  border-radius: 12px;
-  background: #eee;
-  max-width: 40%; */
+
   margin: 6px 0;
   padding: 10px 15px;
   border-radius: 12px;

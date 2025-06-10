@@ -11,28 +11,15 @@ const VoiceControl = () => {
   const dispatch = useDispatch();
   const lastCommandRef = useRef("");
 
-// const sendMessage = async (to, message) => {
-//   try {
-//     await axios.post("http://localhost:8800/message", {
-//       to,
-//       message,
-//     });
-//     alert(`📨 Message to ${to}: ${message} ✅ Sent`);
-//   } catch (err) {
-//     console.error("❌ Failed to send message:", err);
-//     alert("❌ Message failed to send");
-//   }
-// };
 
 const handleCommand = async (command) => {
-    console.log("Sending voice command to backend:", command); // 🧠 Add this
+    console.log("Sending voice command to backend:", command); 
     try{
   const res = await axios.post("http://localhost:8000/command", { text: command });
   const { action, path, query, target, msg, field, value,element } = res.data;
 
   switch (action) {
     case "navigate":
-      // window.location.href = path;
       navigate(path);
       break;
     case "logout":
@@ -42,14 +29,6 @@ const handleCommand = async (command) => {
     case "search":
     navigate(`/gigs?search=${encodeURIComponent(query)}`);
       break;
-    // case "fill":
-    //   document.getElementById(field)?.value = value;
-    // case "fill":
-    //     const input = document.getElementById(field);
-    //     if (input) {
-    //       input.value = value;
-    //     }
-    //     break;
     case "fill":
   // Trigger a custom event to update React state
   window.dispatchEvent(
@@ -70,8 +49,6 @@ const handleCommand = async (command) => {
     window.dispatchEvent(
       new CustomEvent("voice-send-message", {
         detail: {
-          // target: res.data.target,
-          // msg: res.data.msg,
           target, msg,
         },
       })
@@ -134,7 +111,6 @@ const toggleListening = () => {
        recognition.onresult = (event) => {
        const lastIndex = event.results.length - 1;
       const transcript = event.results[lastIndex][0].transcript.trim().toLowerCase();
-        // const transcript = event.results[0][0].transcript;
         console.log("🎤Heard:", transcript);
 
         // Prevent repeating the same command

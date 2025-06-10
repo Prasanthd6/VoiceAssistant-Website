@@ -61,7 +61,6 @@ const SellerProfile = () => {
         <p><strong>Success score:</strong> -</p>
         <p><strong>Rating:</strong> ⭐ -</p>
         <p><strong>Response rate:</strong> -</p>
-        {/* <button onClick={() => navigate("/create-gig")}>Create Your Gig</button> */}
         {!hasGig ? (
         <button
           onClick={() => navigate("/add")}
@@ -100,22 +99,3 @@ const SellerProfile = () => {
 };
 
 export default SellerProfile;
-
-
-
-  //   newRequest
-  //     .get(`/gigs?userId=${currentUser.id}`)
-  //     .then((res) => {
-  //       // If gigs array is empty, user has no gig
-  //       setHasGig(res.data.length > 0);
-
-  //     })
-  //     .catch((err) => {
-  //       console.error("Failed to fetch gigs", err);
-  //       setHasGig(false);
-  //     })
-  //     .finally(() => {
-  //       setLoading(false);
-  //       navigate("/seller")
-  //     });
-  // }, [location.pathname]);

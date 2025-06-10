@@ -2,8 +2,6 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  /* background-color: #135e91; */
-  /* background-image: url("C:\Users\prasa\Desktop\Mern pro\frontend_store\src\assets\featurebg.png"); */
   color: white;
   margin-bottom: 20px;
 }
@@ -31,16 +29,7 @@
   font-weight: 300;
 }
 
-/* .featured .container .left .search {
-  background-color: white;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
-  padding: 8px;
-  width: 150%;
-} */
+
 .featured .container .left .search {
   background-color: white;
   border-radius: 20px;
@@ -61,17 +50,6 @@
 }
 
 
-
-/* .featured .container .left .search .searchInput img {
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-} */
-
-/* .featured .container .left .search .searchInput input {
-  border: none;
-  outline: none;
-} */
 .featured .container .left .search .searchInput input {
   width: 100%;
   padding: 10px;

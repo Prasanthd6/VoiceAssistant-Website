@@ -30,12 +30,6 @@ function Register() {
     });
   };
 
-  // const handleSeller = (e) => {
-  //   setUser((prev) => {
-  //     return { ...prev, isSeller: e.target.checked };
-  //   });
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -45,8 +39,6 @@ function Register() {
         ...user,
         img: url,
       });
-      // navigate("/")
-
 
       const res = await newRequest.post("/auth/login", {
        username: user.username,
@@ -54,8 +46,7 @@ function Register() {
     });
     // Step 3: Save the user to local storage (or context, if you're using one)
     localStorage.setItem("currentUser", JSON.stringify(res.data));
-    // Step 4: Redirect to home
-    // navigate("/");
+    
     setShowRolePopup(true);
 
 
@@ -114,14 +105,7 @@ function Register() {
           <button type="submit">Register</button>
         </div>
         <div className="right">
-          {/* <h1>I want to become a seller</h1>
-          <div className="toggle">
-            <label htmlFor="">Activate the seller account</label>
-            <label className="switch">
-              <input type="checkbox" onChange={handleSeller} />
-              <span className="slider round"></span>
-            </label>
-          </div> */}
+         
           <label htmlFor="">Phone Number</label>
           <input
             name="phone"

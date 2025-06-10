@@ -85,23 +85,16 @@ function Footer() {
               <FaLinkedin size={18}/>
               <FaFacebook size={18}/>
               <FaXTwitter size={18}/>
-              {/* <img src="/img/twitter.png" alt="" />
-              <img src="/img/facebook.png" alt="" />
-              <img src="/img/linkedin.png" alt="" />
-              <img src="/img/pinterest.png" alt="" />
-              <img src="/img/instagram.png" alt="" /> */}
+              
             </div>
             <div className="link">
-              {/* <img src="/img/language.png" alt="" /> */}
               <TbWorld size={18}/>
               <span>English</span>
             </div>
             <div className="link">
-              {/* <img src="/img/coin.png" alt="" /> */}
               <FaIndianRupeeSign size={15}/>
               <span>INR</span>
             </div>
-            {/* <img src="/img/accessibility.png" alt="" /> */}
             <BsUniversalAccessCircle size={18} />
           </div>
         </div>
