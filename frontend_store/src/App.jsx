@@ -42,6 +42,8 @@ function App() {
       </div>
     );
   };
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+const voiceApiUrl = process.env.REACT_APP_VOICE_API_URL;
 
   const router = createBrowserRouter([
     {

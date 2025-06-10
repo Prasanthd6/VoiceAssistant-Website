@@ -7,8 +7,11 @@ import re
 
 app = FastAPI()
 
+# origins = [
+#     "http://localhost:5173"
+# ]
 origins = [
-    "http://localhost:5173"
+    "https://voiceassistant-frontend.vercel.app"
 ]
 # Enable CORS
 app.add_middleware(
