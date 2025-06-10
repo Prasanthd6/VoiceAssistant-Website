@@ -55,8 +55,8 @@ app.use((err, req, res, next) => {
 });
 
 
-
-server.listen(8800, () => {
+const PORT = process.env.PORT || 8800;
+server.listen(PORT, () => {
   connect(); // ⬅️ Still call MongoDB connect
   console.log("Backend server is running on port 8800");
 });
