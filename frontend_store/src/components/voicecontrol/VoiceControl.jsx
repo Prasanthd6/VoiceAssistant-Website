@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../../redux/userSlice';
+import { VOICE_API_URL } from '../../../config';
 
 const VoiceControl = () => {
   const [isListening, setIsListening] = useState(false);
@@ -15,7 +16,7 @@ const VoiceControl = () => {
 const handleCommand = async (command) => {
     console.log("Sending voice command to backend:", command); 
     try{
-  const res = await axios.post("http://localhost:8000/command", { text: command });
+  const res = await axios.post(`${VOICE_API_URL}/command`, { text: command });
   const { action, path, query, target, msg, field, value,element } = res.data;
 
   switch (action) {
