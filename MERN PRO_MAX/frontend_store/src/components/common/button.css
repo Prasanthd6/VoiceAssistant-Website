@@ -1,0 +1,27 @@
+.custom-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.primary-button {
+  background-color: #44ADE6;
+  color: black;
+  font-weight: bold;
+}
+
+.secondary-button {
+  border: 2px solid  #5468B7;
+  background-color: white;
+  color:#5468B7;
+  font-weight: bold;
+
+}
+
+.danger-button {
+  background-color: red;
+  color: white;
+}

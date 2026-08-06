@@ -1,0 +1,154 @@
+.myChatsPage {
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.myChatsPage .chatList {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 10px;
+}
+.myChatsPage .chatList h3 {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #fffefe;
+  box-shadow: 0 4px 10px rgba(51, 50, 50, 0.1);
+    border-bottom: 1px solid #ccc;
+
+}
+.myChatsPage .chatList .chatListItem {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+/* .myChatsPage .chatList .chatListItem img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+ .chatListAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.chatListHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.myChatsPage .chatList .chatListItem span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  
+}
+.chatListItem p {
+  font-size: 13px;
+  margin-left: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chatListItem:hover {
+  background-color: rgb(207, 203, 203);
+}
+
+.myChatsPage .chatList .chatListItem.active {
+  background: #f0f0f0;
+}
+
+.myChatsPage .chatWindow {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chatHeader {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #fffefe;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.myChatsPage .chatWindow .chatMessages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.myChatsPage .chatWindow .chatMessages .message {
+  /* margin: 20px 0;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #eee;
+  max-width: 40%; */
+  margin: 6px 0;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background: #eee;
+  display: inline-block;
+  max-width: 50%;
+  font-size: 14px;
+  width: fit-content;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+    align-self: flex-start;
+
+}
+
+.myChatsPage .chatWindow .chatMessages .own {
+  align-self: flex-end;
+  background: #2e6ce2;
+  color: white;
+}
+
+.myChatsPage .chatWindow .chatInput {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fffefe;
+}
+
+.myChatsPage .chatWindow .chatInput input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  outline: none;
+  font-size: 14px;
+}
+
+.myChatsPage .chatWindow .chatInput button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #2e6ce2;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.myChatsPage .chatWindow .noChat {
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+.chatMessages::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

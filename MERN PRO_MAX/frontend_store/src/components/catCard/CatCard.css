@@ -1,0 +1,46 @@
+.catCard {
+  width: 252px;
+  height: 344px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1dbf73 0%, #19a463 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.catCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catCard .cat-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.catCard .desc {
+  font-weight: 300;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+
+.catCard .title {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 1;
+}
